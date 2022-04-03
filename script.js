@@ -71,6 +71,8 @@ document.querySelector("#confirm-btn").addEventListener("click", function () {
     "0",
   ];
 
+  let numberList = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"];
+
   let scholarArray = [];
   let emailArray = [];
   let passwordArray = [];
@@ -82,6 +84,8 @@ document.querySelector("#confirm-btn").addEventListener("click", function () {
     for (let j = 0; j < 9; j++) {
       password += passwordList[Math.floor(Math.random() * passwordList.length)];
     }
+
+    password += numberList[Math.floor(Math.random() * numberList.length)];
 
     if (i < 10) {
       scholarArray.push("SCHOLAR 00" + i);
