@@ -85,13 +85,13 @@ document.querySelector("#confirm-btn").addEventListener("click", function () {
 
     if (i < 10) {
       scholarArray.push("SCHOLAR 00" + i);
-      emailArray.push("ourpath.art+00" + i + "@gmail.com");
+      emailArray.push("pathaxiesch+00" + i + "@gmail.com");
     } else if (i < 100) {
       scholarArray.push("SCHOLAR 0" + i);
-      emailArray.push("ourpath.art+0" + i + "@gmail.com");
+      emailArray.push("pathaxiesch+0" + i + "@gmail.com");
     } else {
       scholarArray.push("SCHOLAR " + i);
-      emailArray.push("ourpath.art+" + i + "@gmail.com");
+      emailArray.push("pathaxiesch+" + i + "@gmail.com");
     }
 
     passwordArray.push(password);
