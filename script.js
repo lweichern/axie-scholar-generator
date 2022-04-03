@@ -80,12 +80,17 @@ document.querySelector("#confirm-btn").addEventListener("click", function () {
   let scholarGeneratorList = [];
 
   for (let i = startValue; i < endValue + 1; i++) {
+    let randomIndex = Math.floor(Math.random() * 9);
+    console.log(randomIndex);
     let password = "";
     for (let j = 0; j < 9; j++) {
-      password += passwordList[Math.floor(Math.random() * passwordList.length)];
+      if (j == randomIndex) {
+        password += numberList[Math.floor(Math.random() * numberList.length)];
+      } else {
+        password +=
+          passwordList[Math.floor(Math.random() * passwordList.length)];
+      }
     }
-
-    password += numberList[Math.floor(Math.random() * numberList.length)];
 
     if (i < 10) {
       scholarArray.push("SCHOLAR 00" + i);
